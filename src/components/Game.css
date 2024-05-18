@@ -1,0 +1,50 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.game-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f6956a3-8b79-44ea-9990-f1bbd2742fa4/dfo84f1-a0fd2e36-398b-4be8-8d03-8e3c05662b73.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZmNjk1NmEzLThiNzktNDRlYS05OTkwLWYxYmJkMjc0MmZhNFwvZGZvODRmMS1hMGZkMmUzNi0zOThiLTRiZTgtOGQwMy04ZTNjMDU2NjJiNzMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-AIpb-z99i4VpRZqCNGmu_7OqL1VYJaYMyWVuoI2c08');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.neon {
+    font-size: 3em;
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;
+}
+
+.celebration-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celebration-emoji {
+    font-size: 3em;
+    margin: 0 5px;
+    animation: burst 0.5s cubic-bezier(0.42, 0, 0.58, 1) alternate infinite;
+}
+
+@keyframes burst {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-50px) scale(1.5);
+        opacity: 1;
+    }
+}
